@@ -1,0 +1,159 @@
+#Home {
+  width: 100%;
+  height: 100vh;
+  background: url("../../Assets/Images/bg.png") no-repeat center center/cover;
+}
+.nav-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 90%;
+  margin: auto;
+  position: fixed;
+  z-index: 10000;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+  font-size: 2rem;
+  margin: 1.5rem;
+}
+.navbar {
+  display: flex;
+}
+.logo{
+  margin: auto;
+}
+.brandLogo {
+  width: 25rem;
+}
+.socialLogo {
+  margin: 1.5rem;
+  transition: all .5s ease;
+}
+.material-symbols-outlined {
+  font-size: 4rem;
+}
+.material-symbols-outlined:hover {
+  cursor: pointer;
+}
+.fa-brands {
+  font-size: 3rem;
+}
+.navLinks{
+  transition: all .5s ease;
+
+}
+.navLinks:hover,.socialLogo:hover{
+  color:crimson;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.seperate-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  padding: 2rem;
+  height: 80vh;
+  margin-top: 8rem;
+}
+.wel-title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.welcome {
+  border: 2px solid crimson;
+  padding: 1.5rem 2.5rem;
+  margin-top: 13rem;
+  background-color: transparent;
+  transition: all 1s ease;
+}
+.welcome:hover {
+  transform: translateY(-30px);
+  background-color: crimson;
+  border: 2px solid white;
+  color: white;
+}
+.heading {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+h1 span {
+  color: crimson;
+  font-size: 4.5rem;
+}
+.description {
+  margin-top: 2rem;
+  font-size: 1.7rem;
+}
+.desc {
+  color: grey;
+}
+.connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.connect i {
+  margin-left: 0.3rem;
+}
+.arrCircle {
+  margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid white;
+  padding: 0.5rem;
+  animation: move 2s infinite forwards;
+}
+.seperate-right {
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 50%;
+  padding: 4rem;
+  height: 80vh;
+}
+.homeAstronaut {
+  position: absolute;
+  bottom: 8rem;
+  width: 40rem;
+  animation: moveAstro 4s infinite forwards;
+}
+@keyframes move {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes moveAstro {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4rem);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
