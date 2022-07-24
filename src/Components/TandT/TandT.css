@@ -1,3 +1,9 @@
+.responsive{
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    z-index: 100;
+}
 #TandT{
     width: 80%;
     min-height: 100vh;
@@ -24,11 +30,12 @@
 .skillsSection{
     width:100%;
     margin:auto;
-    margin-top: 15rem;
+    margin-top: 5rem;
 
 }
 .subTitle{
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-weight: 400;
 }
 .mb5 {
     margin: 14rem 0px 0rem -2rem;
@@ -96,17 +103,23 @@
     /* background-color: grey; */
 }
 .langImg,.toolImg{
-    width: 100px;
+    width: 80px;
 }
 .langName,.toolName{
     font-size: 1.5rem;
+    color: grey;
 }
 .lang,.tool{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1rem;
+    margin: auto;
+    transition: all .5s ease;
+
+}
+.lang:hover,.tool:hover{
+    transform: translateY(-2rem);
 }
 @media screen and (max-width:1200px) {
     .homeCubeSkills {

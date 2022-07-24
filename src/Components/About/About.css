@@ -7,10 +7,19 @@
     justify-content: center;
     align-items: center;
 }
+.responsive3{
+    width: 100%;
+    min-height: 100vh;
+    background:white;
+    position: relative;
+    z-index: 100;
+}
+
 .title{
     font-size:5rem;
     text-transform:uppercase;
     margin-bottom: 1rem;
+    margin-top: 4rem;
     letter-spacing: .4rem;
     word-spacing: 1rem;
 }
@@ -24,23 +33,33 @@
 .sectionLeft{
     width: 40%;
     margin: auto;
-    border: 2px solid white;
     padding: 5rem 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10rem;
+    animation: movepic 2s forwards infinte;
 }
-.sectionLeft:hover img{
-    transform: translateY(-3rem);
+.sectionLeft img{
+    width: 40rem;
+    box-shadow: 0 0 10px 0 black;
 }
+.grey{
+    color: black;
+    transition: all 1s ease;
+}
+
 img{
     transition: all 2s ease ;
     width:auto;
 }
 .sectionRight{
     width: 40%;
-    margin: auto;
+margin: auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 .resumeBtn{
     background-color: transparent;
@@ -49,10 +68,27 @@ img{
     font-size: 2rem;
     border: 2px solid crimson;
     cursor: pointer;
-    transition: all 1s ease;
+    transition: all .3s ease;
+}
+.desc{
+    margin-top: 2rem;
+    line-height: 2.7rem;
 }
 .resumeBtn:hover{
     background-color: crimson;
-    border: 2px solid white;
+    box-shadow: 0 0 10px 0 crimson;
     cursor: pointer;
+    color: white;
+}
+.resumeBtn:hover .grey{
+    color: white;
+}
+
+@keyframes movepic {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100rem);
+    }
 }

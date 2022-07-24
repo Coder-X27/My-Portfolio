@@ -3,33 +3,47 @@ import './Home.css'
 import Astronaut from "../../Assets/Images/Astronaut.svg"
 import logo from "../../Assets/Images/logo.png"
 import Typewriter from 'typewriter-effect'
+import img from '../../Assets/Images/bg.png'
 function Home() {
+  document.addEventListener('scroll', () => {
+    var scroll_position = window.scrollY;
+    if (scroll_position > 550) {
+        document.getElementById('nav-main').style.background = 'white'
+        document.getElementById('navLink1').style.color = 'black'
+        document.getElementById('navLink2').style.color = 'black'
+        document.getElementById('navLink3').style.color = 'black'
+        document.getElementById('navLink4').style.color = 'black'
+        document.getElementById('navLink5').style.color = 'black'
+        document.getElementById('nav-main').style.boxShadow = '0 0 7px 0 grey'
+        document.getElementById('brandLogo').style.filter = 'invert(1)'
+        
+      } else {
+        document.getElementById('nav-main').style.background = 'transparent';
+        document.getElementById('nav-main').style.boxShadow = '0 0 0 0 black'
+        document.getElementById('brandLogo').style.filter = 'invert(0)'
+        document.getElementById('navLink1').style.color = 'white'
+        document.getElementById('navLink2').style.color = 'white'
+        document.getElementById('navLink3').style.color = 'white'
+        document.getElementById('navLink4').style.color = 'white'
+        document.getElementById('navLink5').style.color = 'white'
+
+      }
+});
   return (
     <>
       <div id="Home">
-        <div id='nav-main' className="nav-main">
+        <header id='nav-main' className="nav-main">
           <div className="logo">
-            <img className="brandLogo" src={logo} alt="" />
+            <img id='brandLogo' className="brandLogo" src={logo} alt="" />
           </div>
           <ul id='navbar' className='navbar' >
-            <li className='navLinks'><a href="#Home" className='navLinks'>Home</a></li>
-            <li className='navLinks'><a href="#About" className='navLinks'>About</a></li>
-            <li className='navLinks'><a href="#TandT" className='navLinks'>Tech&Tools</a></li>
-            <li className='navLinks'><a href="#resume" className='navLinks'>Resume</a></li>
-            <li className='navLinks'><a href="#contact" className='navLinks'>Contact</a></li>
+            <li className='navLinks'><a href="#Home" id='navLink1' className='navLinks'>Home</a></li>
+            <li className='navLinks'><a href="#About" id='navLink2' className='navLinks'>About</a></li>
+            <li className='navLinks'><a href="#TandT" id='navLink3' className='navLinks'>Tech&Tools</a></li>
+            <li className='navLinks'><a href="#contact" id='navLink4' className='navLinks'>Projects</a></li>
+            <li className='navLinks'><a href="#Contact" id='navLink5' className='navLinks'>Contact</a></li>
           </ul>
-          <div className="socialLogos">
-            <a className='socialLogo' target='_blank' href="https://www.instagram.com/its_karanshx/">
-              <i id='socialIcon' class="socialLogo fa-brands fa-instagram"></i>
-            </a>
-            <a className='socialLogo' target='_blank' href="https://www.linkedin.com/in/karan-sharma-23574a1b9/">
-              <i id='socialIcon' class="socialLogo fa-brands fa-linkedin-in"></i>
-            </a>
-            <a className='socialLogo' target='_blank' href="https://github.com/Coder-X27">
-              <i id='socialIcon' class="socialLogo fa-brands fa-github"></i>
-            </a>
-          </div>
-        </div>
+        </header>
         <div className="container">
           <div className="seperate-left" >
             <div className="welcome">

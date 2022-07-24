@@ -33,6 +33,8 @@ import tool10 from '../../Assets/Images/Tools/VScode.png'
 
 function TandT() {
   return (
+    <div className="responsive">
+
     <div id='TandT'>
       <div className="section">
         <div className="cubeSection">
@@ -61,12 +63,12 @@ function TandT() {
               <img src={url6} alt="Face6" />
             </div>
           </div>
-          <h1 className="title margin"><span> T</span>echnology <br /> and <span> T</span>ools</h1>
+          <h1 className="title grey"><span> T</span>echnology <br /> and <span> T</span>ools</h1>
 
         </div>
         <div className="skillsSection">
           <div className="languages">
-            <h1 className="subTitle">Languages</h1>
+            <h1 className="subTitle grey">Languages and Frameworks</h1>
             <div className="language">
               <div className="lang1 lang">
                 <img className='langImg' src={lang1} alt="" />
@@ -76,7 +78,14 @@ function TandT() {
                 <img className='langImg' src={lang2} alt="" />
                 <p className="langName">C++</p>
               </div>
-
+              <div className="lang1 lang">
+                <img className='langImg' src={lang7} alt="" />
+                <p className="langName">Python</p>
+              </div>
+              <div className="lang1 lang">
+                <img className='langImg' src={lang6} alt="" />
+                <p className="langName">Pug</p>
+              </div>
               <div className="lang1 lang">
                 <img className='langImg' src={lang3} alt="" />
                 <p className="langName">MatPlotLib</p>
@@ -89,14 +98,8 @@ function TandT() {
                 <img className='langImg' src={lang5} alt="" />
                 <p className="langName">Pandas</p>
               </div>
-              <div className="lang1 lang">
-                <img className='langImg' src={lang6} alt="" />
-                <p className="langName">Pug</p>
-              </div>
-              <div className="lang1 lang">
-                <img className='langImg' src={lang7} alt="" />
-                <p className="langName">Python</p>
-              </div>
+              
+              
               <div className="lang1 lang">
                 <img className='langImg' src={lang8} alt="" />
                 <p className="langName">Seaborn</p>
@@ -111,8 +114,9 @@ function TandT() {
               </div>
             </div>
           </div>
+          <hr />
           <div className="tools">
-            <h1 className="subTitle">Tools</h1>
+            <h1 className="subTitle grey">Tools</h1>
             <div className="toola">
               <div className="tool1 tool">
                 <img className='toolImg' src={tool1} alt="" />
@@ -158,6 +162,7 @@ function TandT() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   )
 }
