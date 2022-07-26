@@ -15,7 +15,7 @@ function Contact() {
   return (
     <div className="responsive2" id='Contact'>
       <div className="contactContainer">
-        <h1 className="title margin grey">Contact <span>Me</span></h1>
+        <h1 className="title mar2 grey">Contact <span>Me</span></h1>
         <div className="contact">
           <div className="card center">
             <div className="leftSec ">
@@ -38,42 +38,42 @@ function Contact() {
         </div>
         <div className="social">
           <div >
-            <h1 className="title grey small">
+            <h1 className="title mar2 grey">
               <span> Social</span> Handles
             </h1>
           </div>
           <div className="socialHandles">
-            <a target="_blank" href="https://github.com/Coder-X27">
+            <a target="_blank" rel="noreferrer" href="https://github.com/Coder-X27">
               <div className="socialHandle grey github">
                 <img src={img1} alt="" />
               </div>
             </a>
-            <a target="_blank" href="https://www.facebook.com/Karansh99">
+            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/Karansh99">
               <div className="socialHandle grey facebook">
                 <img src={img2} alt="" />
               </div>
             </a>
-            <a target="_blank" href="https://www.instagram.com/its_karanshx/">
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/its_karanshx/">
               <div className="socialHandle grey instagram">
                 <img src={img3} alt="" />
               </div>
             </a>
-            <a target="_blank" href="https://www.hackerrank.com/Coder_X27">
+            <a target="_blank" rel="noreferrer" href="https://www.hackerrank.com/Coder_X27">
               <div className="socialHandle grey hackerrank">
                 <img src={img4} alt="" />
               </div>
             </a>
-            <a target="_blank" href="https://www.linkedin.com/in/karan-sharma-23574a1b9/">
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/karan-sharma-23574a1b9/">
               <div className="socialHandle grey linkedin">
                 <img src={img5} alt="" />
               </div>
             </a>
-            <a target="_blank" href="https://leetcode.com/karanshx/">
+            <a target="_blank" rel="noreferrer" href="https://leetcode.com/karanshx/">
               <div className="socialHandle grey leetcode">
                 <img src={img6} alt="" />
               </div>
             </a>
-            <a target="_blank" href="https://www.codechef.com/users/karanshx99">
+            <a target="_blank" rel="noreferrer" href="https://www.codechef.com/users/karanshx99">
               <div className="socialHandle grey codechef">
                 <img src={img7} alt="" />
               </div>

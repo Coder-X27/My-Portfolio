@@ -1,0 +1,151 @@
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+.margin {
+  margin-top: 10rem;
+}
+.responsive2 {
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+  position: relative;
+  z-index: 10;
+}
+
+.contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+.cimg {
+  width: 40%;
+  margin: auto;
+}
+.cards {
+  width: 40%;
+  margin: auto;
+}
+.font {
+  font-size: 1.5rem;
+}
+.mar {
+  margin-top: 1rem;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 200px;
+  margin: 2rem;
+  box-shadow: 0 0 10px 0 rgb(49, 44, 44);
+  border-radius: 2rem;
+  transition: all 1s ease;
+}
+.card:hover {
+  box-shadow: 0 0 5px 0 black;
+  transform: scale(1.1);
+
+}
+.center {
+  text-align: center;
+}
+.leftSec img {
+  width: 15rem;
+}
+.conimg {
+  width: 50rem;
+  margin: auto;
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.socialHandles {
+  width: 100%;
+  margin: auto;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.socialHandle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 10rem;
+  margin: 1rem;
+  width: 15rem;
+  padding: 1rem 2rem;
+}
+.socialHandle:hover {
+  transform: scale(1.1);
+}
+.socialHandle img {
+  width: 100%;
+}
+.small{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.small span{
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: crimson;
+}
+
+.github {
+  box-shadow: 0 0 10px 0 purple;
+}
+.linkedin {
+  box-shadow: 0 0 10px 0 blue;
+}
+.facebook {
+  box-shadow: 0 0 10px 0 skyblue;
+}
+.instagram {
+  box-shadow: 0 0 10px 0 rgb(124, 31, 217);
+}
+.codechef {
+  box-shadow: 0 0 10px 0 brown;
+}
+.leetcode {
+  box-shadow: 0 0 10px 0 orange;
+}
+.hackerrank {
+  box-shadow: 0 0 10px 0 green;
+}
+.github:hover {
+  box-shadow: 0 0 5px 0 purple;
+}
+.linkedin:hover {
+  box-shadow: 0 0 5px 0 blue;
+}
+.facebook:hover {
+  box-shadow: 0 0 5px 0 skyblue;
+}
+.instagram:hover {
+  box-shadow: 0 0 5px 0 rgb(124, 31, 217);
+}
+.codechef:hover {
+  box-shadow: 0 0 5px 0 brown;
+}
+.leetcode:hover {
+  box-shadow: 0 0 5px 0 orange;
+}
+.hackerrank:hover {
+  box-shadow: 0 0 5px 0 green;
+}

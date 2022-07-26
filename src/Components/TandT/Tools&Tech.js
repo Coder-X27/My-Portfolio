@@ -34,135 +34,133 @@ import tool10 from '../../Assets/Images/Tools/VScode.png'
 function TandT() {
   return (
     <div className="responsive">
+      <div id='TandT'>
+        <div className="section">
+          <div className="cubeSection">
+            <div className="homeCubeSkills mb5">
+              <div className="homeCubeSkillsFaces homeCubeSkillsFace1">
+                <img src={url1} alt="Face1" />
+              </div>
 
-    <div id='TandT'>
-      <div className="section">
-        <div className="cubeSection">
-          <div className="homeCubeSkills mb5">
-            <div className="homeCubeSkillsFaces homeCubeSkillsFace1">
-              <img src={url1} alt="Face1" />
-            </div>
+              <div className="homeCubeSkillsFaces homeCubeSkillsFace2">
+                <img src={url2} alt="Face2" />
+              </div>
 
-            <div className="homeCubeSkillsFaces homeCubeSkillsFace2">
-              <img src={url2} alt="Face2" />
-            </div>
+              <div className="homeCubeSkillsFaces homeCubeSkillsFace3">
+                <img src={url3} alt="Face3" />
+              </div>
 
-            <div className="homeCubeSkillsFaces homeCubeSkillsFace3">
-              <img src={url3} alt="Face3" />
-            </div>
+              <div className="homeCubeSkillsFaces homeCubeSkillsFace4">
+                <img src={url4} alt="Face4" />
+              </div>
 
-            <div className="homeCubeSkillsFaces homeCubeSkillsFace4">
-              <img src={url4} alt="Face4" />
-            </div>
+              <div className="homeCubeSkillsFaces homeCubeSkillsFace5">
+                <img src={url5} alt="Face5" />
+              </div>
 
-            <div className="homeCubeSkillsFaces homeCubeSkillsFace5">
-              <img src={url5} alt="Face5" />
+              <div className="homeCubeSkillsFaces homeCubeSkillsFace6">
+                <img src={url6} alt="Face6" />
+              </div>
             </div>
-
-            <div className="homeCubeSkillsFaces homeCubeSkillsFace6">
-              <img src={url6} alt="Face6" />
-            </div>
+            <h1 className="title grey auto m"><span> T</span>echnology <br /> and <span> T</span>ools </h1>
           </div>
-          <h1 className="title grey"><span> T</span>echnology <br /> and <span> T</span>ools</h1>
+          <div className="skillsSection">
+            <div className="languages">
+              <h1 className="subTitle grey">Languages and Frameworks</h1>
+              <div className="language">
+                <div className="lang1 lang">
+                  <img className='langImg' src={lang1} alt="" />
+                  <p className="langName">C</p>
+                </div>
+                <div className="lang1 lang">
+                  <img className='langImg' src={lang2} alt="" />
+                  <p className="langName">C++</p>
+                </div>
+                <div className="lang1 lang">
+                  <img className='langImg' src={lang7} alt="" />
+                  <p className="langName">Python</p>
+                </div>
+                <div className="lang1 lang">
+                  <img className='langImg' src={lang6} alt="" />
+                  <p className="langName">Pug</p>
+                </div>
+                <div className="lang1 lang">
+                  <img className='langImg' src={lang3} alt="" />
+                  <p className="langName">MatPlotLib</p>
+                </div>
+                <div className="lang1 lang">
+                  <img className='langImg' src={lang4} alt="" />
+                  <p className="langName">Numpy</p>
+                </div>
+                <div className="lang1 lang">
+                  <img className='langImg' src={lang5} alt="" />
+                  <p className="langName">Pandas</p>
+                </div>
 
-        </div>
-        <div className="skillsSection">
-          <div className="languages">
-            <h1 className="subTitle grey">Languages and Frameworks</h1>
-            <div className="language">
-              <div className="lang1 lang">
-                <img className='langImg' src={lang1} alt="" />
-                <p className="langName">C</p>
-              </div>
-              <div className="lang1 lang">
-                <img className='langImg' src={lang2} alt="" />
-                <p className="langName">C++</p>
-              </div>
-              <div className="lang1 lang">
-                <img className='langImg' src={lang7} alt="" />
-                <p className="langName">Python</p>
-              </div>
-              <div className="lang1 lang">
-                <img className='langImg' src={lang6} alt="" />
-                <p className="langName">Pug</p>
-              </div>
-              <div className="lang1 lang">
-                <img className='langImg' src={lang3} alt="" />
-                <p className="langName">MatPlotLib</p>
-              </div>
-              <div className="lang1 lang">
-                <img className='langImg' src={lang4} alt="" />
-                <p className="langName">Numpy</p>
-              </div>
-              <div className="lang1 lang">
-                <img className='langImg' src={lang5} alt="" />
-                <p className="langName">Pandas</p>
-              </div>
-              
-              
-              <div className="lang1 lang">
-                <img className='langImg' src={lang8} alt="" />
-                <p className="langName">Seaborn</p>
-              </div>
-              <div className="lang1 lang">
-                <img className='langImg' src={lang9} alt="" />
-                <p className="langName">Scipy</p>
-              </div>
-              <div className="lang1 lang">
-                <img className='langImg' src={lang10} alt="" />
-                <p className="langName">Tensorflow</p>
+
+                <div className="lang1 lang">
+                  <img className='langImg' src={lang8} alt="" />
+                  <p className="langName">Seaborn</p>
+                </div>
+                <div className="lang1 lang">
+                  <img className='langImg' src={lang9} alt="" />
+                  <p className="langName">Scipy</p>
+                </div>
+                <div className="lang1 lang">
+                  <img className='langImg' src={lang10} alt="" />
+                  <p className="langName">Tensorflow</p>
+                </div>
               </div>
             </div>
-          </div>
-          <hr />
-          <div className="tools">
-            <h1 className="subTitle grey">Tools</h1>
-            <div className="toola">
-              <div className="tool1 tool">
-                <img className='toolImg' src={tool1} alt="" />
-                <p className="toolName">Babel JS</p>
-              </div>
-              <div className="tool2 tool">
-                <img className='toolImg' src={tool2} alt="" />
-                <p className="toolName">BootStrap</p>
-              </div>
-              <div className="tool1 tool">
-                <img className='toolImg' src={tool3} alt="" />
-                <p className="toolName">Git</p>
-              </div>
-              <div className="tool1 tool">
-                <img className='toolImg' src={tool4} alt="" />
-                <p className="toolName">Github</p>
-              </div>
-              <div className="tool1 tool">
-                <img className='toolImg' src={tool5} alt="" />
-                <p className="toolName">Heroku</p>
-              </div>
-              <div className="tool1 tool">
-                <img className='toolImg' src={tool6} alt="" />
-                <p className="toolName">Netlify</p>
-              </div>
-              <div className="tool1 tool">
-                <img className='toolImg' src={tool7} alt="" />
-                <p className="toolName">StackOverflow</p>
-              </div>
-              <div className="tool1 tool">
-                <img className='toolImg' src={tool8} alt="" />
-                <p className="toolName">Sublime</p>
-              </div>
-              <div className="tool1 tool">
-                <img className='toolImg' src={tool9} alt="" />
-                <p className="toolName">Tailwind</p>
-              </div>
-              <div className="tool1 tool">
-                <img className='toolImg' src={tool10} alt="" />
-                <p className="toolName">VS Code</p>
+            <hr />
+            <div className="tools">
+              <h1 className="subTitle grey">Tools</h1>
+              <div className="toola">
+                <div className="tool1 tool">
+                  <img className='toolImg' src={tool1} alt="" />
+                  <p className="toolName">Babel JS</p>
+                </div>
+                <div className="tool2 tool">
+                  <img className='toolImg' src={tool2} alt="" />
+                  <p className="toolName">BootStrap</p>
+                </div>
+                <div className="tool1 tool">
+                  <img className='toolImg' src={tool3} alt="" />
+                  <p className="toolName">Git</p>
+                </div>
+                <div className="tool1 tool">
+                  <img className='toolImg' src={tool4} alt="" />
+                  <p className="toolName">Github</p>
+                </div>
+                <div className="tool1 tool">
+                  <img className='toolImg' src={tool5} alt="" />
+                  <p className="toolName">Heroku</p>
+                </div>
+                <div className="tool1 tool">
+                  <img className='toolImg' src={tool6} alt="" />
+                  <p className="toolName">Netlify</p>
+                </div>
+                <div className="tool1 tool">
+                  <img className='toolImg' src={tool7} alt="" />
+                  <p className="toolName">StackOverflow</p>
+                </div>
+                <div className="tool1 tool">
+                  <img className='toolImg' src={tool8} alt="" />
+                  <p className="toolName">Sublime</p>
+                </div>
+                <div className="tool1 tool">
+                  <img className='toolImg' src={tool9} alt="" />
+                  <p className="toolName">Tailwind</p>
+                </div>
+                <div className="tool1 tool">
+                  <img className='toolImg' src={tool10} alt="" />
+                  <p className="toolName">VS Code</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
   )
 }

@@ -12,14 +12,12 @@
     min-height: 100vh;
     background:white;
     position: relative;
-    z-index: 100;
+    z-index: 10;
 }
 
 .title{
     font-size:5rem;
     text-transform:uppercase;
-    margin-bottom: 1rem;
-    margin-top: 4rem;
     letter-spacing: .4rem;
     word-spacing: 1rem;
 }
@@ -38,7 +36,6 @@
     justify-content: center;
     align-items: center;
     margin-top: 10rem;
-    animation: movepic 2s forwards infinte;
 }
 .sectionLeft img{
     width: 40rem;
@@ -83,12 +80,81 @@ align-items: center;
 .resumeBtn:hover .grey{
     color: white;
 }
+.hide2{
+    display: none;
+    margin-top: 5rem;
+}
 
-@keyframes movepic {
-    0%{
-        transform: translateX(0);
+@media only screen and (max-width: 870px)  {
+    .responsive3{
+        width: 100%;
+        min-height: 100vh;
+        background:white;
+        position: relative;
+        z-index: 10;
+        margin: auto;
     }
-    100%{
-        transform: translateX(-100rem);
+    
+    .aboutContainer{
+        width: 90%;
+        margin: auto;
+    }
+    .title{
+        font-size:3rem;
+        text-transform:uppercase;
+        letter-spacing: .4rem;
+        word-spacing: 1rem;
+    }
+    .title span{
+        font-size:3rem;
+        color: crimson;
+    }
+    .sections{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectionLeft{
+        width: 50%;
+        margin-top:5rem;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectionLeft img{
+        width: 100%;
+        box-shadow: 0 0 10px 0 black;
+    }
+    .sectionRight{
+        width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .resumeBtn{
+        background-color: transparent;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        border: 2px solid crimson;
+        cursor: pointer;
+        transition: all .3s ease;
+    }
+    .description{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hide{
+        display: none;
+    }
+    .hide2{
+        display: block;
     }
 }

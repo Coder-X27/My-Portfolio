@@ -1,0 +1,146 @@
+.projectsSection {
+  width: 100%;
+  min-height: 100vh;
+  /* background-color: rgba(0, 0, 0, 0.688); */
+}
+.section2 {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mar2 {
+  margin-top: 3.5rem;
+}
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin: auto;
+  margin-top: 6rem;
+  transition: all 1s ease;
+  padding: 4rem 5rem;
+}
+.project:hover {
+    transform: scale(1.1);
+    box-shadow: 0 -0 10px 0 black;
+}
+.project:hover .projectImg{
+    transform: scale(1.2);
+}
+.project:nth-child(even){
+    flex-direction: row-reverse;
+}
+.leftSection {
+  width: 40%;
+}
+
+.rightSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 40%;
+}
+.projectTitle {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+.projectDescription {
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  color: grey;
+}
+.projectImg {
+  width: 100%;
+  transition: all 1s ease;
+  box-shadow: 0 10px 6px -6px crimson;
+}
+
+.icons {
+  color: black;
+  font-size: 4rem;
+}
+.icons:hover {
+  color: crimson;
+}
+.goto{
+    margin-top: 1rem;
+}
+.iconlink{
+    margin: 0 2rem;
+}
+@media only screen and (max-width: 870px)  {
+  .projectsSection{
+    width: 100%;
+  }
+  .section2 {
+    width: 90%;
+  }
+  .mar2 {
+    margin-top: 2.5rem;
+  }
+  .projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin:5rem auto;
+    transition: all 1s ease;
+    padding: 0;
+  }
+  .project:hover {
+      transform: scale(1);
+      box-shadow: 0 -0 10px 0 black;
+  }
+  .project:hover .projectImg{
+      transform: scale(1);
+  }
+  .project:nth-child(even){
+      flex-direction: column;
+  }
+  .leftSection {
+    width: 100%;
+  }
+  
+  .rightSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .projectTitle {
+    font-size: 2.4rem;
+    margin: 1rem 0;
+    text-align: center;
+  }
+  .projectDescription {
+    font-size: 1.3rem;
+    line-height: 2.1rem;
+    color: grey;
+  }
+  .icons {
+    color: black;
+    font-size: 3rem;
+  }
+  .icons:hover {
+    color: crimson;
+  }
+}

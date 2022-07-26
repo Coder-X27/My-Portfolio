@@ -149,3 +149,36 @@
 .hackerrank:hover {
   box-shadow: 0 0 5px 0 green;
 }
+@media only screen and (max-width: 870px)  {
+  .contactContainer {
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+  }
+  .margin {
+    margin-top: 10rem;
+  }
+  .contact {
+    flex-direction: column;
+  }
+  .font {
+    font-size: 1.5rem;
+  }
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 200px;
+    margin: 2rem;
+    box-shadow: 0 0 10px 0 rgb(49, 44, 44);
+    border-radius: 2rem;
+    transition: all 1s ease;
+  }
+  .card:hover {
+    box-shadow: 0 0 5px 0 black;
+    transform: scale(1.1);
+  
+  }
+}
